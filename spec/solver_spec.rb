@@ -11,6 +11,12 @@ describe Solver do
       result = @solver.factorial(num)
       expect(result).to eq(24)
     end
+
+    it 'factorial 0 should return 1' do
+      num = 0
+      result = @solver.factorial(num)
+      expect(result).to eq(1)
+    end
   end
 
   context 'test the reverse method' do
