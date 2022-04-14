@@ -17,6 +17,12 @@ describe Solver do
       result = @solver.factorial(num)
       expect(result).to eq(1)
     end
+
+    it 'factorial less than 0 should raise ean exception' do
+      num = -3
+      result = @solver.factorial(num)
+      expect(result).to raise_exception
+    end
   end
 
   context 'test the reverse method' do
