@@ -28,5 +28,12 @@ describe Solver do
 
       expect(result).to eq 'fizzbuzz'
     end
+
+    it 'divisible by 3 return fizz' do
+      num = 12
+      result = @solver.fizzbuzz(num)
+
+      expect(result).to eq 'fizz'
+    end
   end
 end
