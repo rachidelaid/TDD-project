@@ -12,4 +12,12 @@ describe Solver do
       expect(result).to eq(24)
     end
   end
+
+  context 'test the reverse method' do
+    it 'reverse "hello" should return "olleh"' do
+      word = 'hello'
+      reversed = @solver.reverse(word)
+      expect(reversed).to eq('olleh')
+    end
+  end
 end
