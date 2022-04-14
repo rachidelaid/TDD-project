@@ -14,10 +14,10 @@ describe Solver do
   end
 
   context 'test the reverse method' do
-    it 'reverse "hello" should return "olleh"' do
-      word = 'hello'
+    it 'reverse "rachid" should return "dihcar"' do
+      word = 'rachid'
       reversed = @solver.reverse(word)
-      expect(reversed).to eq('olleh')
+      expect(reversed).to eq('dihcar')
     end
   end
 end

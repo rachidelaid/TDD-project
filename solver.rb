@@ -4,4 +4,10 @@ class Solver
 
     number * factorial(number - 1)
   end
+
+  def reverse(word)
+    reversed = []
+    word.chars.each { |char| reversed.unshift(char) }
+    reversed.join
+  end
 end
