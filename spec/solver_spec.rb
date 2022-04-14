@@ -35,5 +35,12 @@ describe Solver do
 
       expect(result).to eq 'fizz'
     end
+
+    it 'divisible by 5 return buzz' do
+      num = 10
+      result = @solver.fizzbuzz(num)
+
+      expect(result).to eq 'buzz'
+    end
   end
 end
