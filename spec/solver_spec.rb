@@ -42,5 +42,12 @@ describe Solver do
 
       expect(result).to eq 'buzz'
     end
+
+    it 'any other case return number as string' do
+      num = 7
+      result = @solver.fizzbuzz(num)
+
+      expect(result).to eq num.to_s
+    end
   end
 end
