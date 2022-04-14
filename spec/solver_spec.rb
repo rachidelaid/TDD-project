@@ -20,4 +20,13 @@ describe Solver do
       expect(reversed).to eq('dihcar')
     end
   end
+
+  context 'test fizzbuzz method' do
+    it 'divisible by 3 and 5 return fizzbuzz' do
+      num = 15
+      result = @solver.fizzbuzz(num)
+
+      expect(result).to eq 'fizzbuzz'
+    end
+  end
 end
